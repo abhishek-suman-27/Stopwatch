@@ -46,12 +46,14 @@ stop.onclick = () => {
 };
 
 reset.onclick = () => {
-    laps.innerHTML = "";
+    clearInterval(timeInterval);  // Clear the interval first
+    timeInterval = null; 
     hrs = min = sec = ms = 0;
     count = 0;
-    timeInterval = null;
-    clearInterval(timeInterval);
+
+    laps.innerHTML = "";
     stopWatchDuration.innerHTML = `${zeroPad(hrs)}${" "}:${" "}${zeroPad(min)}${" "}:${" "}${zeroPad(sec)}${" "}:${" "}${zeroPad(ms)}`;
+    
     
 };
 
