@@ -14,3 +14,5 @@ A digital stopwatch web application built using HTML, CSS, and JavaScript. This 
 - CSS
 - JavaScript
 
+## Deployment Link
+- To use the Digital Stopwatch : https://run-stopwatch.netlify.app
